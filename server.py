@@ -27,7 +27,7 @@ while True:
 		fileName = data[0:fileNameEnd]
 		# open file
 		print 'Saving to file ', fileName
-		file = open('/home/pi/git/project/www/data/' + fileName,'w')
+		file = open('/home/pi/git/Bit-Biosignals-Server/www/data/' + fileName,'w')
 
 		# write first chunk to file
 		file.write(data[fileNameEnd+1:len(data)])
@@ -46,6 +46,4 @@ while True:
 				# close socket
 				connection.close()
 				break
-	else:
-		break
 
