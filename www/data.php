@@ -33,7 +33,7 @@
 
 				<?php
 					// make array of files in data directory
-					$files = scandir("/home/pi/git/project/www/data/");
+					$files = scandir("/home/pi/git/Bit-Biosignals-Server/www/data/");
 					unset($files[0]); // remove . entry
 					unset($files[1]); // remove .. entry
 					
